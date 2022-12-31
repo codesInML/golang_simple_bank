@@ -29,7 +29,7 @@ type Transfer struct {
 	ID            int64         `json:"id"`
 	FromAccountID sql.NullInt64 `json:"from_account_id"`
 	ToAccountID   sql.NullInt64 `json:"to_account_id"`
-	// can be positive or negative
+	// must be positive
 	Amount    int64     `json:"amount"`
 	CreatedAt time.Time `json:"created_at"`
 }
