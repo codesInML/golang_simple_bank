@@ -10,3 +10,8 @@ Content-Type: application/json
 ### GET AN ACCOUNT
 GET http://localhost:8080/accounts/1
 Content-Type: application/json
+
+### GET ALL ACCOUNTS WITH PAGINATION
+GET http://localhost:8080/accounts?page_size=20&page_number=5
+Content-Type: application/json
+
